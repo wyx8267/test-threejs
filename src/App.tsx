@@ -1,4 +1,5 @@
 import React from 'react';
+import HelloLight from './components/hello-light';
 import HelloPrimitives from './components/hello-primitives';
 import HelloScene from './components/hello-scene';
 import HelloTexture from './components/hello-texture';
@@ -9,7 +10,8 @@ function App() {
     // <HelloThreejs />
     // <HelloPrimitives />
     // <HelloScene />
-    <HelloTexture />
+    // <HelloTexture />
+    <HelloLight />
   );
 }
 
