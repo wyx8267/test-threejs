@@ -1,4 +1,5 @@
 import React from 'react';
+import HelloCamera from './components/hello-camera';
 import HelloLight from './components/hello-light';
 import HelloPrimitives from './components/hello-primitives';
 import HelloScene from './components/hello-scene';
@@ -11,7 +12,8 @@ function App() {
     // <HelloPrimitives />
     // <HelloScene />
     // <HelloTexture />
-    <HelloLight />
+    // <HelloLight />
+    <HelloCamera />
   );
 }
 
