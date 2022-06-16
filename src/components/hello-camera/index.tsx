@@ -33,7 +33,13 @@ const HelloCamera: React.FC = () => {
     scene.add(light);
     scene.add(light.target);
 
-    const leftCamera = new Three.PerspectiveCamera(45, 2, 5, 100);
+    //PerspectiveCamera
+    // const leftCamera = new Three.PerspectiveCamera(45, 2, 5, 100);
+    // leftCamera.position.set(0, 10, 20);
+
+    //OrthographicCamera
+    const leftCamera = new Three.OrthographicCamera(-1, 1, 1, -1, 5, 50);
+    leftCamera.zoom = 0.2
     leftCamera.position.set(0, 10, 20);
 
     const helper = new Three.CameraHelper(leftCamera);
@@ -82,7 +88,13 @@ const HelloCamera: React.FC = () => {
       const sceneBackground = sceneRef.current.background as Three.Color
 
       const leftAspect = setScissorForElement(leftViewRef.current as HTMLDivElement)
-      leftCamera.aspect = leftAspect as number
+      //PerspectiveCamera
+      // leftCamera.aspect = leftAspect as number
+
+       //OrthographicCamera
+      leftCamera.left = -(leftAspect as number)
+      leftCamera.right = leftAspect as number
+      
       leftCamera.updateProjectionMatrix()
 
       helper.update()
