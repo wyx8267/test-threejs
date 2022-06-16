@@ -4,6 +4,7 @@ import HelloFakeShadow from './components/hello-fake-shadow';
 import HelloFog from './components/hello-fog';
 import HelloLight from './components/hello-light';
 import HelloPrimitives from './components/hello-primitives';
+import HelloRenderTarget from './components/hello-render-target';
 import HelloScene from './components/hello-scene';
 import HelloShadow from './components/hello-shadow';
 import HelloTexture from './components/hello-texture';
@@ -19,7 +20,8 @@ function App() {
     // <HelloCamera />
     // <HelloFakeShadow />
     // <HelloShadow />
-    <HelloFog />
+    // <HelloFog />
+    <HelloRenderTarget />
   );
 }
 
