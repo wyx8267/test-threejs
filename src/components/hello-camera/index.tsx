@@ -22,6 +22,7 @@ const HelloCamera: React.FC = () => {
     const renderer = new Three.WebGLRenderer({
       canvas: canvasRef.current as HTMLCanvasElement,
     });
+    renderer.setScissorTest(true)
     const scene = createScene();
     scene.background = new Three.Color(0x000000);
     sceneRef.current = scene;
