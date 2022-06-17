@@ -1,5 +1,6 @@
 import React from 'react';
 import HelloCamera from './components/hello-camera';
+import HelloCanvas from './components/hello-canvas';
 import HelloFakeShadow from './components/hello-fake-shadow';
 import HelloFog from './components/hello-fog';
 import HelloLight from './components/hello-light';
@@ -23,7 +24,8 @@ function App() {
     // <HelloShadow />
     // <HelloFog />
     // <HelloRenderTarget />
-    <RenderingOnDemand />
+    // <RenderingOnDemand />
+    <HelloCanvas />
   );
 }
 

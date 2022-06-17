@@ -1,0 +1,11 @@
+.full-screen,
+canvas {
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+
+.dat-gui {
+  top: 16px !important;
+  font-size: 18px !important;
+}
