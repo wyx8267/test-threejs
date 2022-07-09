@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import DatGui, { DatButton } from "react-dat-gui";
 import useCreateScene from "./use-create-scene";
 import "./index.scss";
@@ -8,14 +8,34 @@ const HelloCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [date, setDate] = useState<any>({});
 
-  useCreateScene(canvasRef);
+  const renderRef = useCreateScene(canvasRef);
 
   const handleGUIUpdate = (newDate: any) => {
     setDate(newDate);
   };
 
   const handleSaveClick = () => {
-    //编写点击之后的代码
+    if (canvasRef.current === null || renderRef.current === null) {
+      return;
+    }
+    const canvas = canvasRef.current;
+    renderRef.current();
+
+    // toDataURL()
+    const imgurl = canvas.toDataURL('image/jpeg', 0.8)
+    const a = document.createElement('a')
+    a.href = imgurl;
+    a.download = 'myimg.jpeg';
+    a.click()
+
+    // toBlob()
+    // canvas.toBlob(blob => {
+    //   const imgurl = window.URL.createObjectURL(blob as Blob)
+    //   const a = document.createElement('a')
+    //   a.href = imgurl;
+    //   a.download = 'myimg.jpeg';
+    //   a.click()
+    // }, 'image/jpeg', 0.8)
   };
 
   return (
