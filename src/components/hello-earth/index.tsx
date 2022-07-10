@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as Three from "three";
-import BufferGeometryUtils from "three/examples/jsm/utils/BufferGeometryUtils";
+import { mergeBufferGeometries } from "three/examples/jsm/utils/BufferGeometryUtils";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 type DataType = (number | undefined)[][];
@@ -171,10 +171,10 @@ const HelloEarth = () => {
         geometries.push(geometry);
       });
     });
-    const mergedGeometry = BufferGeometryUtils.mergeBufferGeometries(geometries)
+    const mergedGeometry = mergeBufferGeometries(geometries)
     //const material = new Three.MeshBasicMaterial({ color: 'red' })
     const material = new Three.MeshBasicMaterial({
-        vertexColors: true
+      vertexColors: true
     })
     const mesh = new Three.Mesh(mergedGeometry, material)
     scene.add(mesh)
