@@ -12,6 +12,7 @@ import HelloScene from './components/hello-scene';
 import HelloShadow from './components/hello-shadow';
 import HelloTexture from './components/hello-texture';
 import HelloThreejs from './components/hello-threejs';
+import LoadGltf from './components/load-gltf';
 import LoadObj from './components/load-obj';
 import OffscreenCanvas from './components/offscreen-canvas';
 import PopulationCompare from './components/population-compare';
@@ -35,7 +36,8 @@ function App() {
     // <HelloEarth />
     // <PopulationCompare />
     // <OffscreenCanvas />
-    <LoadObj />
+    // <LoadObj />
+    <LoadGltf />
   );
 }
 
