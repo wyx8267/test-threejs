@@ -1,4 +1,5 @@
 import React from 'react';
+import BackgroundTexture from './components/background-texture';
 import HelloCamera from './components/hello-camera';
 import HelloCanvas from './components/hello-canvas';
 import PreserveDrawingBuffer from './components/hello-canvas/preserve-drawing-buffer';
@@ -17,6 +18,7 @@ import LoadObj from './components/load-obj';
 import OffscreenCanvas from './components/offscreen-canvas';
 import PopulationCompare from './components/population-compare';
 import RenderingOnDemand from './components/rendering-on-demand';
+import SkyBox from './components/skybox';
 
 function App() {
   return (
@@ -37,7 +39,9 @@ function App() {
     // <PopulationCompare />
     // <OffscreenCanvas />
     // <LoadObj />
-    <LoadGltf />
+    // <LoadGltf />
+    // <BackgroundTexture />
+    <SkyBox />
   );
 }
 
