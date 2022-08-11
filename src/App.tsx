@@ -12,6 +12,7 @@ import HelloScene from './components/hello-scene';
 import HelloShadow from './components/hello-shadow';
 import HelloTexture from './components/hello-texture';
 import HelloThreejs from './components/hello-threejs';
+import OffscreenCanvas from './components/offscreen-canvas';
 import PopulationCompare from './components/population-compare';
 import RenderingOnDemand from './components/rendering-on-demand';
 
@@ -31,7 +32,8 @@ function App() {
     // <HelloCanvas />
     // <PreserveDrawingBuffer />
     // <HelloEarth />
-    <PopulationCompare />
+    // <PopulationCompare />
+    <OffscreenCanvas />
   );
 }
 

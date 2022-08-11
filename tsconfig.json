@@ -2,7 +2,7 @@
   "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext", "WebWorker", "WebWorker.ImportScripts"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
