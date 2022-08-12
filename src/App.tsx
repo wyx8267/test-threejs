@@ -19,6 +19,7 @@ import OffscreenCanvas from './components/offscreen-canvas';
 import PopulationCompare from './components/population-compare';
 import RenderingOnDemand from './components/rendering-on-demand';
 import SkyBox from './components/skybox';
+import TransparentBox from './components/transparent';
 
 function App() {
   return (
@@ -41,7 +42,8 @@ function App() {
     // <LoadObj />
     // <LoadGltf />
     // <BackgroundTexture />
-    <SkyBox />
+    // <SkyBox />
+    <TransparentBox />
   );
 }
 
