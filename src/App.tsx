@@ -15,6 +15,7 @@ import HelloTexture from './components/hello-texture';
 import HelloThreejs from './components/hello-threejs';
 import LoadGltf from './components/load-gltf';
 import LoadObj from './components/load-obj';
+import MultipleScenes from './components/multiple-scenes';
 import OffscreenCanvas from './components/offscreen-canvas';
 import PopulationCompare from './components/population-compare';
 import RenderingOnDemand from './components/rendering-on-demand';
@@ -43,7 +44,8 @@ function App() {
     // <LoadGltf />
     // <BackgroundTexture />
     // <SkyBox />
-    <TransparentBox />
+    // <TransparentBox />
+    <MultipleScenes />
   );
 }
 
