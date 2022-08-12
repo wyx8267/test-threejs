@@ -7,7 +7,7 @@
   display: block;
   z-index: -1;
 }
-.diagram {
+*[data-diagram] {
   display: inline-block;
   width: 20em;
   height: 12em;
