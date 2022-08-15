@@ -17,6 +17,7 @@ import LoadGltf from './components/load-gltf';
 import LoadObj from './components/load-obj';
 import MultipleScenes from './components/multiple-scenes';
 import OffscreenCanvas from './components/offscreen-canvas';
+import Picking from './components/picking';
 import PopulationCompare from './components/population-compare';
 import RenderingOnDemand from './components/rendering-on-demand';
 import SkyBox from './components/skybox';
@@ -45,7 +46,7 @@ function App() {
     // <BackgroundTexture />
     // <SkyBox />
     // <TransparentBox />
-    <MultipleScenes />
+    <Picking />
   );
 }
 
