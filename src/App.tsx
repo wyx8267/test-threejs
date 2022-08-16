@@ -1,6 +1,7 @@
 import React from 'react';
 import AlignHtmlElements from './components/align-html-elements';
 import BackgroundTexture from './components/background-texture';
+import Billboards from './components/billboards';
 import CanvasTextureExample from './components/canvas-texture';
 import CanvasTextureExample2 from './components/canvas-texture/index-two';
 import HelloCamera from './components/hello-camera';
@@ -52,7 +53,8 @@ function App() {
     // <Picking />
     // <AlignHtmlElements />
     // <CanvasTextureExample />
-    <CanvasTextureExample2 />
+    // <CanvasTextureExample2 />
+    <Billboards />
   );
 }
 
