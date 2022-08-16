@@ -1,6 +1,8 @@
 import React from 'react';
 import AlignHtmlElements from './components/align-html-elements';
 import BackgroundTexture from './components/background-texture';
+import CanvasTextureExample from './components/canvas-texture';
+import CanvasTextureExample2 from './components/canvas-texture/index-two';
 import HelloCamera from './components/hello-camera';
 import HelloCanvas from './components/hello-canvas';
 import PreserveDrawingBuffer from './components/hello-canvas/preserve-drawing-buffer';
@@ -48,7 +50,9 @@ function App() {
     // <SkyBox />
     // <TransparentBox />
     // <Picking />
-    <AlignHtmlElements />
+    // <AlignHtmlElements />
+    // <CanvasTextureExample />
+    <CanvasTextureExample2 />
   );
 }
 
