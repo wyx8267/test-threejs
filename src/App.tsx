@@ -1,4 +1,5 @@
 import React from 'react';
+import AlignHtmlElements from './components/align-html-elements';
 import BackgroundTexture from './components/background-texture';
 import HelloCamera from './components/hello-camera';
 import HelloCanvas from './components/hello-canvas';
@@ -46,7 +47,8 @@ function App() {
     // <BackgroundTexture />
     // <SkyBox />
     // <TransparentBox />
-    <Picking />
+    // <Picking />
+    <AlignHtmlElements />
   );
 }
 
