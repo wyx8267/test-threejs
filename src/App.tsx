@@ -17,6 +17,7 @@ import HelloScene from './components/hello-scene';
 import HelloShadow from './components/hello-shadow';
 import HelloTexture from './components/hello-texture';
 import HelloThreejs from './components/hello-threejs';
+import IndexedTextures from './components/indexed-textures';
 import LoadGltf from './components/load-gltf';
 import LoadObj from './components/load-obj';
 import MultipleScenes from './components/multiple-scenes';
@@ -54,7 +55,8 @@ function App() {
     // <AlignHtmlElements />
     // <CanvasTextureExample />
     // <CanvasTextureExample2 />
-    <Billboards />
+    // <Billboards />
+    <IndexedTextures />
   );
 }
 
