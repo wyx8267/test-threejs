@@ -27,6 +27,7 @@ import PopulationCompare from './components/population-compare';
 import RenderingOnDemand from './components/rendering-on-demand';
 import SkyBox from './components/skybox';
 import TransparentBox from './components/transparent';
+import VoxelExample from './components/voxel-geometry';
 
 function App() {
   return (
@@ -56,7 +57,8 @@ function App() {
     // <CanvasTextureExample />
     // <CanvasTextureExample2 />
     // <Billboards />
-    <IndexedTextures />
+    // <IndexedTextures />
+    <VoxelExample />
   );
 }
 
